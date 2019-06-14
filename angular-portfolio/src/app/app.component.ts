@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-portfolio';
+  title = 'Mi Portfolio';
+
+  author = "nicoquagliata";
+  dateStarted = new Date('June 13, 2019 23:39:00');
+
 }
