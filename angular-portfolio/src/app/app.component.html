@@ -1,12 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<header>
+  <h1 class="display1 text-center">
     {{ title }}!
   </h1>
-  <h2>por {{ author }}</h2>
-  <div>
-    <p class="date">{{ dateStarted  | date : "dd.MM.y"}}</p>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-9 ">
+          <p class="h3">Works</p>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+    </div>
+    <div class="col-3 order-12">
+          <p class="h3">About me</p>
+    </div>
   </div>
+</div>
+
+<div id="diver">
+
+
+  <footer>
+    <h2>Creado por {{ author }}</h2>
+    <div>
+      <p>Comenzado el <span class="date">{{ dateStarted  | date : "dd.MM.y"}}</span></p>
+    </div>
+  </footer>
+
 </div>
 
 
