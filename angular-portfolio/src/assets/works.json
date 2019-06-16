@@ -1,0 +1,32 @@
+[{
+    "ID": "001",
+    "Name": "my first website",
+    "Type": "Web Design",
+    "Description": "Web Design work description configurated by me for you to see whats happening",
+    "URL": "http://www.website.com",
+    "ImageURL": "../assets/images/thumbnail2.svg"
+},
+{
+    "ID": "002",
+    "Name": "one Logo Design",
+    "Type": "Graphic Design",
+    "Description": "Graphic Design work description configurated by me for you to see whats happening",
+    "URL": "http://www.website2.com",
+    "ImageURL": "../assets/images/thumbnail2.svg"
+},
+{
+    "ID": "003",
+    "Name": "EKIFOLSA",
+    "Type": "Web Design",
+    "Description": "Web Design EKIFOLSA work description configurated by me for you to see whats happening",
+    "URL": "http://www.ekifolsa.com",
+    "ImageURL": "../assets/images/thumbnail2.svg"
+},
+{
+    "ID": "004",
+    "Name": "Galante & Martins",
+    "Type": "Web Design",
+    "Description": "Web Design Galante & Martins work description configurated by me for you to see whats happening",
+    "URL": "http://galantemartins.com/",
+    "ImageURL": "../assets/images/thumbnail2.svg"
+}]
