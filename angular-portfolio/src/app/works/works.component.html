@@ -1,7 +1,7 @@
 <p class="h4">Works from Json</p>
 <div *ngIf="arrWorks" class="row">
 
-  <div *ngFor="let work of arrWorks" class="card col-sm-6" style="width: 18rem;">
+  <div *ngFor="let work of arrWorks" class="card col-5 m-1">
     <div class="img"><img src="{{work.ImageURL}}" alt="..." class=""></div>
     <div class="card-body">
       <h5 class="card-title"><span class="badge badge-primary ">{{work.ID}}</span> {{work.Name | uppercase}} </h5>
