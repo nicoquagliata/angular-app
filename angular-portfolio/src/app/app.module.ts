@@ -7,7 +7,9 @@ import { WorksComponent } from './works/works.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

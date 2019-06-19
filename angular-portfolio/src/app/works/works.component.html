@@ -1,14 +1,32 @@
 <p class="h4">Works from Json</p>
-<div *ngIf="arrWorks" class="row">
 
-  <div *ngFor="let work of arrWorks" class="card col-5 m-1">
-    <div class="img"><img src="{{work.ImageURL}}" alt="..." class=""></div>
-    <div class="card-body">
-      <h5 class="card-title"><span class="badge badge-primary ">{{work.ID}}</span> {{work.Name | uppercase}} </h5>
-      <p><span class="badge badge-secondary">{{work.Type}}</span></p>
-      <p class="card-text">{{work.Description}}</p>
-      <a href="{{work.URL}}" class="btn btn-primary" target="_blank">view website</a>
-    </div>
-  </div>
+<mat-grid-list cols="3">
+  <mat-grid-tile *ngFor="let work of arrWorks" class="card col-5 m-1">
 
-</div>
+    <mat-card class="work-card">
+      <mat-card-header>
+        <div mat-card-avatar class="work-header-image"></div>
+        <mat-card-title>{{work.Name | uppercase}} </mat-card-title>
+        <mat-card-subtitle>
+          <span class="badge badge-secondary">{{work.Type}}</span>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="img">
+          <img mat-card-image src="{{work.ImageURL}}" alt="{{work.Name | uppercase}}">
+        </div>
+        <p>{{work.Description}} <a href="{{work.URL}}" class="btn btn-primary" target="_blank"></a>
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button >{{work.URL}}</button>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+
+
+  </mat-grid-tile>
+
+</mat-grid-list>
